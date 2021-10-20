@@ -11,25 +11,26 @@ public class Saludo {
 		String mensaje= "";
 		switch (idioma) {
 		
-		case "Castellano":
-			mensaje="Bienvenido";
-			break;
+			case "Castellano":
+				mensaje="Bienvenido";
+				break;
+				
 			
+			case "Ingles":
+				mensaje="Welcome";
+				break;
+			
+			
+			case "Italiano":
+				mensaje="Bienvenuto";
+				break;
+			
+			default:
+				mensaje="Bienvenido";
+				break;
+			
+			}
 		
-		case "Ingles":
-			mensaje="Welcome";
-			break;
-		
-		
-		case "Italiano":
-			mensaje="Bienvenuto";
-			break;
-		
-		default:
-			mensaje="Bienvenido";
-			break;
-		
-		}
 		return mensaje;
 		
 	}
